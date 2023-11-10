@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: kyu3/cs3219-frontend:v1.0
+          image: kyueran/cs3219-frontend:v1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 3000

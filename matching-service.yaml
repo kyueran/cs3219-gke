@@ -33,7 +33,7 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: main-config
-                  key: ROOM_SERVICE_PATH
+                  key: ROOM_PATH
             - name: NODE_ENV
               valueFrom:
                 configMapKeyRef:

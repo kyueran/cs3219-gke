@@ -39,7 +39,7 @@ spec:
                 configMapKeyRef:
                   name: main-config
                   key: MATCHING_PATH
-            -name: QUESTION_SERVICE
+            - name: QUESTION_SERVICE
               valueFrom:
                 configMapKeyRef:
                   name: main-config
