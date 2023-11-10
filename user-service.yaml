@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: thesoggy/peerprep-user-service:kub
+          image: kyueran/cs3219-user-service:v1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 5005

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: video-token-service
-          image: thesoggy/peerprep-video-token-service:kub
+          image: kyueran/cs3219-video-token-service:v1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
