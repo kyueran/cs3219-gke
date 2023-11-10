@@ -29,7 +29,7 @@ spec:
                 configMapKeyRef:
                   name: main-config
                   key: ROOM_SERVICE_PORT
-             - name: FRONTEND_SERVICE
+            - name: FRONTEND_SERVICE
               valueFrom:
                 configMapKeyRef:
                   name: main-config
