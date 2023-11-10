@@ -46,3 +46,17 @@ spec:
                 name: matching-service-service
                 port:
                   number: 6006
+          - path: /room-service(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: room-service-service
+                port:
+                  number: 6007
+          - path: /video-token-service(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: video-token-service-service
+                port:
+                  number: 8080
