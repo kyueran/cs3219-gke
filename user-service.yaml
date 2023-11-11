@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: kyueran/cs3219-user-service:v1.0
+          image: renakitsune/peerprep:user_service
           imagePullPolicy: Always
           ports:
             - containerPort: 5005
