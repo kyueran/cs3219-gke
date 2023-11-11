@@ -6,6 +6,7 @@
 kubectl apply -f firebase-secret.yaml
 kubectl apply -f supabase-secret.yaml
 kubectl apply -f main-config.yaml
+kubectl apply -f peerprep-com-tls-secret.yaml
 kubectl apply -f j0-db-config.yaml
 
 # Apply PVCs
