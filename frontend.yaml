@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: kyueran/cs3219-frontend:v1.0
+          image: renakitsune/peerprep:frontend_service
           imagePullPolicy: Always
           ports:
             - containerPort: 3000

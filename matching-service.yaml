@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: matching-service
-          image: kyueran/cs3219-matching-service:v1.0
+          image: renakitsune/peerprep:matching_service
           imagePullPolicy: Always
           ports:
             - containerPort: 6006

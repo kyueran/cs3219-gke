@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: room-service
-          image: kyueran/cs3219-room-service:v1.0
+          image: renakitsune/peerprep:room_service
           imagePullPolicy: Always
           ports:
             - containerPort: 6007

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: question-service
-          image: kyueran/cs3219-question-service:v1.0
+          image: renakitsune/peerprep:question_service
           imagePullPolicy: Always
           ports:
             - containerPort: 5001
