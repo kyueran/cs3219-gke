@@ -9,7 +9,7 @@ data:
   QUESTION_PATH: https://question-service-service:5001
   USER_PATH: /user-service
   MATCHING_PATH: /matching-service/socket.io
-  ROOM_PATH: http://room-service-service:6007
+  ROOM_PATH: https://room-service-service:6007
   VIDEO_TOKEN_PATH: /video-token-service
   QUESTION_SERVICE_PORT: "5001"
   USER_SERVICE_PORT: "5005"
