@@ -66,6 +66,11 @@ spec:
                 configMapKeyRef:
                   name: frontend-config
                   key: VIDEO_PATH
+            - name: RUNTIME_VIDEO_TOKEN_PATH
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-config
+                  key: VIDEO_TOKEN_PATH
             - name: RUNTIME_AGORA_ID
               valueFrom:
                 configMapKeyRef:
