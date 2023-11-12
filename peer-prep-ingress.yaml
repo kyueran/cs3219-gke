@@ -64,3 +64,10 @@ spec:
                 name: video-token-service-service
                 port:
                   number: 8080
+          - path: /code-execution-service(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: judge0-server-service
+                port:
+                  number: 2358
