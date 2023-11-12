@@ -51,6 +51,26 @@ spec:
                 secretKeyRef:
                   name: supabase-secret
                   key: SUPABASE_ANON_KEY
+            - name: RUNTIME_ROOM_PATH
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-config
+                  key: ROOM_PATH
+            - name: RUNTIME_SIGNALING_PATH
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-config
+                  key: SIGNALING_PATH
+            - name: RUNTIME_VIDEO_PATH
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-config
+                  key: VIDEO_PATH
+            - name: RUNTIME_AGORA_ID
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-config
+                  key: AGORA_ID
 ---
 apiVersion: v1
 kind: Service
