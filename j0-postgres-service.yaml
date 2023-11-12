@@ -11,6 +11,13 @@ spec:
       labels:
         app: db
     spec:
+      initContainers:
+      - name: clear-db-mount-path
+        image: busybox
+        command: ['sh', '-c', 'rm -rf /var/lib/postgresql/data/*']
+        volumeMounts:
+        - name: postgres-data
+          mountPath: /var/lib/postgresql/data
       containers:
       - name: db
         image: postgres:13.0
