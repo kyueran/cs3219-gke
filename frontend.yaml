@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: renakitsune/peerprep:frontend_service
+          image: gcr.io/thinking-return-402109/frontend_service:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
