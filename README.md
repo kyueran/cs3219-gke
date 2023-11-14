@@ -84,9 +84,7 @@ git clone https://github.com/kyueran/cs3219-gke.git
 
 cd cs3219-gke
 
-gcloud container node-pools update default-pool \
-    --cluster=cluster-1 \
-    --system-config-from-file=c_group_mode.yaml
+gcloud container node-pools update default-pool --location=us-central1-c --cluster=cluster-1 --system-config-from-file=c_group_mode.yaml
 
 chmod +x deploy.sh
 
