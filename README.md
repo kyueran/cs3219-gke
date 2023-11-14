@@ -71,7 +71,6 @@ kubectl logs [copy paste the pod name]
 
 ---
 
-
 For deployment on GKE:
 
 On cloud console
@@ -80,9 +79,14 @@ helm upgrade --install ingress-nginx ingress-nginx \
   --repo https://kubernetes.github.io/ingress-nginx \
   --namespace ingress-nginx --create-namespace
 
+
 git clone https://github.com/kyueran/cs3219-gke.git
 
 cd cs3219-gke
+
+gcloud container node-pools update default-pool \
+    --cluster=cluster-1 \
+    --system-config-from-file=c_group_mode.yaml
 
 chmod +x deploy.sh
 
@@ -94,5 +98,5 @@ On your local terminal
 sudo vim /etc/hosts
 
 #Add this line
-<External Load Balancer IP without the port number>   peerprep.com
+<load balancer IP>   peerprep.com
 ```
