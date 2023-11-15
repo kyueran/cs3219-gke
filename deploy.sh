@@ -29,10 +29,6 @@ kubectl apply -f ./deployments-services/video-token-service.yaml
 kubectl apply -f ./deployments-services/frontend.yaml
 
 #Apply Horizontal Pod Autoscaler
-kubectl apply -f ./hpa/j0/postgres-service-hpa.yaml
-kubectl apply -f ./hpa/j0/redis-service-hpa.yaml
-kubectl apply -f ./hpa/j0/server-service-hpa.yaml
-kubectl apply -f ./hpa/j0/workers-deployment-hpa.yaml
 kubectl apply -f ./hpa/question-service-hpa.yaml
 kubectl apply -f ./hpa/matching-service-hpa.yaml
 kubectl apply -f ./hpa/user-service-hpa.yaml
