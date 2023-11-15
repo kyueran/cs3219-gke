@@ -9,7 +9,7 @@ data:
   QUESTION_PATH: /question-service
   USER_PATH: /user-service
   MATCHING_PATH: /matching-service/socket.io
-  ROOM_PATH: /room-service
+  ROOM_PATH: https://peerprep.com/room-service
   VIDEO_PATH: /video-token-service
   CODE_EXECUTION_PATH: /code-execution-service
   QUESTION_SERVICE_PORT: "5001"
